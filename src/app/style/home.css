@@ -2,6 +2,11 @@
     padding: 0 24px;
     max-width: 85rem;
     margin: auto;
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: center;
+    align-items: center; */
+
 }
 .header{
     background-color: rgba(255, 255, 255, 0.08);

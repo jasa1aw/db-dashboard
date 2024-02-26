@@ -1,23 +1,16 @@
-'use client'
-import styles from "./page.module.css";
+'use client';
+import Layout from "@/components/Layout/layout";
 import Dashboard from "./dashboard/page";
-import Header from '@/components/header/header';
-import SlideMenu from "@/components/SlideMenu/slideMenu";
 import Login from '@/components/Login/login';
+import Header from "@/components/header/header";
 import { useSession } from "next-auth/react";
 
 export default function Home() {
   const {data: session} = useSession();
   return (
     <main className="main">
-      <Header/>
-      {session && (
-        <>
-          <SlideMenu/>
-          <Dashboard/>
-        </> 
-      )}
-      <Login/>
+        {session && <Dashboard />}
+        {!session && <Login />}
     </main>
   );
-}
+};
