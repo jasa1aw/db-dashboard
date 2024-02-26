@@ -1,17 +1,4 @@
 'use client';
-// import { Avatar } from "@mui/material";
-// import { useSession } from 'next-auth/react';
-
-// export default function Header() {
-//     const { data: session } = useSession();
-//     const avatarUrl = session?.user?.image as string;
-//     return(
-//         <>
-//             <h1>Header</h1>
-//             <Avatar alt={session?.user?.name as string} src={avatarUrl}/>
-//         </>
-//     )
-// };
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
