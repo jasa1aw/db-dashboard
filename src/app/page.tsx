@@ -9,7 +9,7 @@ import { useSession } from "next-auth/react";
 export default function Home() {
   const {data: session} = useSession();
   return (
-    <main className={styles.main}>
+    <main className="main">
       <Header/>
       {session && (
         <>
@@ -17,7 +17,6 @@ export default function Home() {
           <Dashboard/>
         </> 
       )}
-      
       <Login/>
     </main>
   );

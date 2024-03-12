@@ -1,0 +1,15 @@
+.topCardsContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.dataCard{
+    padding: 20px;
+    background-color: #1A2027;
+    color: #fff;
+}
+
+@media(min-width: 768px){
+    .topCardsContainer{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
