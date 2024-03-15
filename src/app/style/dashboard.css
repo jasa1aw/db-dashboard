@@ -7,9 +7,107 @@
     background-color: #1A2027;
     color: #fff;
 }
+.cardData{
+    position: relative;
+    top: 1rem;
+    height: 100%;
+    width: calc(100% - .1rem);
+    padding: 1rem .5rem;
+    background-color: #1A2027;
+}
+.cardData p{
+    padding: .5rem 1rem;
+    margin: 0;
+    color: #fff;
+}
+.cardHeader{
+    display: flex;
+    justify-content: center;
+}
+.cardHeader button{
+    padding: 0.25rem;
+    color: #fff;
+}
+
+.dataRibbon{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+}
+
+.wrapper{
+    display: flex;
+}
+
+.transactions{
+    display: block;
+    padding: 1rem 2rem;
+    width: 100%;
+}
+.chart{
+    max-width: 100%;
+    width: 100%;
+}
+
+.cardWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 100%;
+    width: 100%;
+}
+
+.card{
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .55);
+    margin-bottom: 10px;
+}
+.card p{
+    color:#fff;
+}
+
+.cardTitle p {
+    font-size: 1.8rem;
+}
+
+.cardValue p {
+    font-size: 1.2rem;
+}
+
+
+.bottomRow{
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 1fr;
+}
+
+@media(min-width: 1000px){
+    .transactions{
+        display: flex;
+    }
+    .chart{
+        max-width: 80%;
+    }
+    .cardWrapper{
+        flex-direction: column;
+        max-width: 20%;
+    }
+    .card{
+        padding: 0.5rem;
+    }
+}
+
+@media(min-width: 900px){
+    .dataRibbon, .bottomRow{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
 
 @media(min-width: 768px){
     .topCardsContainer{
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
     }
 }

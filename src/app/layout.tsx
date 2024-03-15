@@ -21,11 +21,9 @@ export default function RootLayout({
           <body>
             <CssBaseline/>
             <Header/>
-            <main className="layout">
               <Layout>
                 {children}
               </Layout>
-            </main>
           </body>
         </html>
 		</SessionWrapper>
